@@ -1,0 +1,613 @@
+body {
+    font-family: "Verdana", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h4 {
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+p {
+    font-size: 14px;
+    color: grey;
+}
+
+.btn-blue {
+    background: @clr-blue;
+}
+.btn-green {
+    background: @clr-green;
+}
+
+.text-orange {
+    color: #F69325;
+}
+
+div, li {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+}
+
+.block { // Общий вид каждого информационного блока
+    width: 100%;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.content { // Класс добавляет отступы, внутри которых содержится весь контент сайта
+    width: 1280px;
+    margin: auto;
+    padding: 0 8%;
+}
+/*--------------------Header------------------------*/
+.header {
+    width: 100%;
+
+    &__top {
+        width: 100%;
+        height: 50px;
+        background: black;
+    }
+    
+    &__text {
+        padding: 5px 0;
+        display: inline-block;
+        width: 50%;
+        float: left;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    &__bottom {
+        width: 100%;
+        height: 110px;
+    }
+    
+    &__logo {
+        margin: 0;
+        height: 100%;
+        width: 15%;
+        float: left;
+        background: #eee;
+    }
+}
+
+.menu {
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: inline-block;
+    
+    &__list {
+        list-style: none;
+        float: right;
+    }
+    
+    &__item {
+        margin-right: 30px;
+        float: left;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+.navbar {
+    float: left;
+    width: 85%;
+    height: 100%;
+    
+    &__list {
+        float: left;
+        margin: 0;
+        list-style: none;
+        height: 100%;
+        width: 79%;
+    }
+    
+    &__item {
+        display: block;
+        float: left;
+        height: 100%;
+    }
+    
+    &__link {
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 45px 30px;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+    }
+    
+    &__btn {
+        border-radius: 0px;
+        margin-top: 33px;
+    }
+    
+    & li > a:hover {
+        color: @clr-green;
+        border-top: 4px solid @clr-green;
+        padding-top: 41px;
+    }
+}
+/*--------------------/Header------------------------*/
+/*--------------------Content------------------------*/
+.main {
+    width: 100%;
+}
+
+.title {
+    height: 900px;
+    background: #aaa;
+    padding-top: 300px;
+    
+    &__h1 {
+        margin: 0 0 20px;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    &__button {
+        margin-top: 70px;
+        width: 235px;
+    }
+}
+
+.list {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    
+    &__item {
+        display: inline-block;
+        width: 25%;
+        margin: 0 20px;
+    }
+    
+    &__pic {
+        width: 70px;
+        height: 70px;
+        margin: 15px auto;
+        background: #fff;
+    }
+    
+    &__title {
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+    
+    &__text {
+        text-transform: capitalize;
+        margin: 0;
+        color: #fff;
+    }
+}
+
+.about {
+    background: #eee;
+    
+    &__history-pic {
+        width: 550px;
+        height: 140px;
+        background: #ccc;
+        margin: auto;
+    }
+    
+    &__pic {
+        width: 50%;
+        height: 400px;
+        float: left;
+        background: #ddd;
+    }
+    
+    &__text {
+        margin-top: 30px;
+        width: 50%;
+        height: 400px;
+        float: left;
+        text-align: left;
+        padding: 0 20px;
+    }
+    
+    &__p {
+        line-height: 25px;
+    }
+}
+
+.trusted {
+    background: #000;
+    padding: 80px 0;
+    
+    h1 {
+        margin: 20px 0;
+        padding-left: 120px;
+        width: 33%;
+        float: left;
+        text-align: left;
+        color: #fff;
+    }
+    
+    &__pics {
+        width: 55%;
+        height: 100%;
+        float: left;
+        padding: 0 70px;
+        margin: -50px 0;
+    }
+    
+    &__pic {
+        display: inline-block;
+        float: left;
+        width: 120px;
+        height: 100px;
+        background: grey;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.calc {
+    h1 {
+        margin-top: 0;
+    }
+    
+    p {
+        font-size: 14px;
+        color: grey;
+    }
+    
+    &__pic {
+        width: 50%;
+        height: 350px;
+        float: left;
+        background: grey;
+    }
+    
+    &__text {
+        width: 50%;
+        height: 350px;
+        float: left;
+        text-align: left;
+        padding-left: 50px;
+        
+        h2 {
+            font-weight: 100;
+        }
+    }
+}
+
+.calc-form {
+    margin: 40px;
+    
+    span {
+        font-size: 26px;
+        color: grey;
+    }
+    
+    &__item {
+        width: 120px;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.price-data {
+    text-align: center;
+    padding: 150px 0;
+    background: #eee;
+    
+    &__text {
+        padding: 0 40px;
+    }
+    
+    &__button {
+        width: 45px;
+        height: 30px;
+        background: black;
+        border-radius: 3px;
+        
+        &:hover {
+            background: @clr-green;
+        }
+    }
+    
+    &__graph {
+        width: 1030px;
+        height: 300px;
+        background: #aaa;
+        margin: 0  auto;
+        margin-top: 20px;
+    }
+}
+
+.contact-us {
+    padding: 50px 0;
+    background: black;
+    
+    h2 {
+        margin: 0;
+        color: #fff;
+        width: 75%;
+        float: left;
+    }
+    
+    button {
+        float: left;
+    }
+}
+
+.buy-sell {
+    
+    &__pic {
+        float: left;
+        width: 50%;
+        height: 300px;
+        background: #aaa;
+    }
+    
+    &__text {
+        float: left;
+        width: 50%;
+        text-align: left;
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+}
+
+.steps {
+    background: @clr-blue;
+    
+    h1 {
+        color: #fff;
+    }
+    
+    p {
+        padding-top: 10px;
+        color: rgba(255,255,255,0.8);
+    }
+}
+
+.links {
+    margin: auto;
+    
+    &__table {
+        margin-left: 50px;
+        text-align: left;
+        font-size: 14px;
+        
+        .picture {
+            width: 100%;
+            height: 380px;
+            background: #ccc;
+        }
+        
+        .pic {
+            width: 50px;
+            height: 50px;
+            background: @clr-green;
+            margin-bottom: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: @clr-blue;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        td {
+            padding-right: 15px;
+            padding-bottom: 30px;
+        }
+        
+        .td-big {
+            width: 400px;
+        }
+    }
+}
+
+.feedback {
+    background: #000;
+    padding: 100px;
+    
+    h1 {
+        color: #fff;
+    }
+    
+    p {
+        text-transform: capitalize;
+    }
+    
+    &__comment {
+    }
+    
+    &__comment {
+        width: 30%;
+        border-radius: 5px;
+        background: #fff;
+        padding: 20px;
+        margin: 40px 10px 0;
+        float: left;
+        
+        .ava {
+            width: 50px;
+            height: 50px;
+            float: left;
+            border-radius: 50%;
+            border-color: grey;
+            background: grey;
+        }
+        
+        h4 {
+            float: left;
+            margin: 10px 20px 5px;
+        }
+        
+        .country {
+            display: block;
+            width: 50%;
+            font-size: 12px;
+            color: grey;
+            margin: 0;
+        }
+        
+        p {
+            font-size: 12px;
+            text-align: left;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 22px;
+        }
+    }
+}
+
+.partners {
+    padding: 100px 0;
+    
+    &__pics {
+        width: 100%;
+        margin: 50px 0;
+    }
+    
+    &__pic {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: #ccc;
+        margin-right: 50px;
+    }
+}
+/*--------------------/Content------------------------*/
+/*---------------------Footer-------------------------*/
+.footer {
+    width: 100%;
+    
+    &__top {
+        padding: 30px 0;
+        background: #333;
+    }
+    &__bottom {
+        padding: 10px 0;
+        background: #000;
+        
+        & p {
+            margin-top: 20px;
+            width: 30%;
+            float: left;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+}
+
+.footer-block {
+    width: 23%;
+    float: left;
+    
+    & h5 {
+        color: #fff;
+    }
+    
+    &__item {
+        margin-bottom: 15px;
+    }
+    
+    &__text {
+        width: 60%;
+        font-size: 12px;
+        line-height: 15px;
+        float: left;
+        margin: 5px 0;
+        color: #fff;
+    }
+    
+    &__link {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    &__icon {
+         display: inline-block;
+         float: left;
+         width: 40px;
+         height: 40px;
+         background: #fff;
+         margin-right: 10px;
+    }
+    
+    &__pic {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        float: left;
+        background: #fff;
+        margin-right: 20px;
+    }
+    
+    &__subtext {
+        display: inline-block;
+        float: left;
+        font-size: 10px;
+        color: lightgray;
+    }
+    
+    & form {
+        margin-top: 70px;
+    }
+    
+    &__input {
+        box-sizing: border-box;
+        width: 66%;
+        height: 40px;
+        border: none;
+        padding: 0 15px;
+    }
+    
+    &__button {
+        margin-left: -6px;
+        border: none;
+        background: @clr-green;
+        color: #fff;
+        font-weight: bold;
+        width: 30%;
+        height: 40px;
+    }
+}
+
+/*--------------------/Footer-----------------------*/
+/* -------------------variables---------------------*/
+@clr-blue: #506EF5;
+@clr-green: #0BB960;
